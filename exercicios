@@ -1,0 +1,129 @@
+-- 1 -- SELECT ArtistId, Name FROM Artist;
+
+-- 2
+
+-- SELECT COUNT(GenreId) FROM Genre;
+
+-- 3
+
+-- SELECT FirstName, Email FROM Customer;
+
+-- 4
+
+-- SELECT Name FROM MediaType;
+
+-- 5
+
+-- SELECT Title, ArtistId FROM Album;
+
+-- 6
+
+-- SELECT COUNT(EmployeeId) FROM Employee;
+
+-- 7
+
+-- SELECT Name FROM Playlist;
+
+-- 8
+
+-- SELECT UnitPrice FROM Track WHERE TrackId = 10;
+
+-- 9
+
+-- SELECT DISTINCT Country FROM Customer;
+
+-- 10
+
+-- SELECT COUNT(InvoiceId) as faturas FROM Invoice;
+
+-- 11
+
+-- SELECT FirstName, LastName FROM Customer WHERE Country = 'Brazil';
+
+-- 12
+
+--  SELECT*FROM Track WHERE UnitPrice > 1.00;
+
+-- 13
+
+-- SELECT * from employee
+-- where hiredate between '2002-01-01' and '2003-01-01'
+
+-- 14
+
+-- SELECT*FROM Track
+-- WHERE GenreId = 1;
+
+-- 15
+
+-- SELECT*FROM Employee 
+-- WHERE title = 'Sales Manager';
+
+-- 16
+
+-- SELECT COUNT(InvoiceID) 
+-- FROM Invoice 
+-- WHERE CustomerId = 1;
+
+-- 17
+
+-- SELECT*FROM Track 
+-- WHERE Milliseconds > 300000;
+
+-- 18
+
+-- SELECT*FROM Album 
+-- WHERE ArtistId = 1;
+
+-- 19
+
+-- SELECT*FROM exercicio.customer
+-- WHERE SupportRepId IS NULL;
+
+-- 20
+
+-- SELECT COUNT(TrackId) 
+-- FROM PlaylistTrack 
+-- WHERE PlaylistId = 1;
+
+-- 21
+
+-- SELECT T.Name AS TrackName, G.Name AS GenreName FROM Track T JOIN Genre G ON T.GenreId = G.GenreId;
+
+-- 22 
+
+-- SELECT C.FirstName AS Cliente_nome, I.Total AS Total_fatura 
+-- FROM Customer C JOIN Invoice I 
+-- ON C.CustomerId = I.CustomerId;
+
+-- 23
+
+-- SELECT A.Name AS Artista_Nome, B.Title AS Album 
+-- FROM Artist A JOIN Album B 
+-- ON A.ArtistId = B.ArtistId;
+
+-- 24
+
+-- SELECT T.Name AS Faixa, B.Title AS Album, A.Name AS nome_artista
+-- FROM Track T JOIN Album B 
+-- ON T.AlbumId = B.AlbumId    
+-- JOIN Artist A 
+-- ON A.ArtistId = B.ArtistId;
+
+-- 25
+
+-- SELECT T.Name AS Nome_faixa, M.MediaTypeId AS Tipo_mídia
+-- FROM Track T JOIN MediaType M 
+-- ON T.MediaTypeId = M.MediaTypeId;
+
+
+-- 26
+
+-- SELECT C.FirstName AS Nome_Cliente, E.FirstName AS Representante_suporte
+-- FROM Customer C JOIN Employee E 
+-- ON C.SupportRepId = E.EmployeeId;
+
+-- 27
+
+
+
